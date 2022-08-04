@@ -110,12 +110,6 @@ button {
 .menu {
   display: flex;
 }
-.menu.link-active {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -145,25 +139,32 @@ button {
   transition: var(--transition-dur-and-func);
 }
 
-.contact {
-  display: flex;
-  align-items: center;
+.link-active {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .link-active::after,
-.site-nav__link:hover::after {
+.menu-link:hover::after {
   width: 100%;
-}
-
-.contact_list {
-  display: flex;
 }
 
 .contact {
   display: flex;
   align-items: center;
 }
-.contact:not(:last-child) {
+
+.contact {
+  display: flex;
+}
+
+.contact__list {
+  display: flex;
+  align-items: center;
+}
+.contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
